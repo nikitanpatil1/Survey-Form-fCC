@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.fontshare.com/v2/css?f[]=segment@400&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/utils.css">
+</head>
+<body>
+    <div class="main__div container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Do fill this form, it will help us to make this <span>community more stronger!!</span></p>
+    
+        <form action="#" id="survey-form">
+            <div class="form__div">
+                <label class="form__label" for="name" id="name-label">Enter your name:</label>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Enter your name" required autocomplete="off">
+            </div>
+            <div class="form__div">
+                <label class="form__label" for="email" id="email-label">Enter your email:</label>
+                <input class="form__input" type="email" name="email" id="email" placeholder="Enter your email" required autocomplete="off">
+            </div>
+            <div class="form__div">
+                <label class="form__label" for="number" id="number-label">Enter your age:</label>
+                <input class="form__input" type="number" name="age" id="number" min="15" max="100" placeholder="Enter your age" required>
+            </div>
+            <div class="form__div">
+                <label class="form__label" for="tel" id="number-label">Enter your number:</label>
+                <input class="form__input" type="tel" name="mobile-number" id="tel" placeholder="Enter your number" minlength="10" maxlength="10" required autocomplete="off">
+            </div>
+
+            <div class="form__div">
+                <label class="form__label" for="Definitely">Would you recommend freeCodeCamp to a friend?</label>
+                <label class="form__option-label" for="Definitely"><input type="radio" name="recommend" id="Definitely" value="Definitely"> Definitely</label>
+                <label class="form__option-label" for="Maybe"><input type="radio" name="recommend" id="Maybe" value="Maybe"> Maybe</label>
+                <label class="form__option-label" for="Not-sure"><input type="radio" name="recommend" id="Not-sure" value="Not sure"> Not sure</label>
+            </div>
+
+            <div class="form__div">
+                <label class="form__label" for="dropdown">Which option best describes your current role?</label>
+                <select class="form__input" name="role" id="dropdown">
+                    <option disabled selected value="Select current role">Select current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Full Time Job">Full Time Job</option>
+                    <option value="Full Time Learner">Full Time Learner</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form__div">
+                <label class="form__label" for="Front-end-Projects">What would you like to see improved?</label>
+                <label class="form__option-label" for="Front-end-Projects"><input type="checkbox" name="prefered" id="Front-end-Projects" value="Front-end Projects"> Front-end Projects</label>
+                <label class="form__option-label" for="Back-end-Projects"><input type="checkbox" name="prefered" id="Back-end-Projects" value="Back-end Projects"> Back-end Projects</label>
+                <label class="form__option-label" for="Data-Visualization"><input type="checkbox" name="prefered" id="Data-Visualization" value="Data Visualization"> Data Visualization</label>
+                <label class="form__option-label" for="Challenges"><input type="checkbox" name="prefered" id="Challenges" value="Challenges"> Challenges</label>
+                <label class="form__option-label" for="Open-Source-Community"><input type="checkbox" name="prefered" id="Open-Source-Community" value="Open Source Community"> Open Source Community</label>
+                <label class="form__option-label" for="Gitter-help-rooms"><input type="checkbox" name="prefered" id="Gitter-help-rooms" value="Gitter help rooms"> Gitter help rooms</label>
+                <label class="form__option-label" for="Videos"><input type="checkbox" name="prefered" id="Videos" value="Videos"> Videos</label>
+                <label class="form__option-label" for="City-Meetups"><input type="checkbox" name="prefered" id="City-Meetups" value="City Meetups"> City Meetups</label>
+                <label class="form__option-label" for="Wiki"><input type="checkbox" name="prefered" id="Wiki" value="Wiki"> Wiki</label>
+                <label class="form__option-label" for="Forum"><input type="checkbox" name="prefered" id="Forum" value="Forum"> Forum</label>
+                <label class="form__option-label" for="Additional-Courses"><input type="checkbox" name="prefered" id="Additional-Courses" value="Additional Courses"> Additional Courses</label>
+            </div>
+            <div class="form__div">
+                <label class="form__label" for="textarea">Any comments or suggestions?</label>
+                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter your comments here!!box"></textarea>
+            </div>
+            
+            <button class="btn" type="submit" value="submit" id="submit">Submit</button>
+            
+        </form>
+    </div>
+
+    <footer class="container">
+        <p>~ Nikita Patil ~</p>
+        <p>
+            *This Webpage is for course project purpose.
+        </p>
+    </footer>
+</body>
+</html>
